@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+{% block page_title %}ソーシャルネットワークログインに失敗しました。{% endblock %}
+
+{% block content %}
+<h1>ソーシャルネットワークログインに失敗しました。</h1>
+
+<p>ソーシャルネットワークログインにするときにエラーが発生</p>
+
+<p>Code: {{ auth_error.code }}</p>
+<p>Error: {{ auth_error.exception }}</p>
+
+{% endblock %}
